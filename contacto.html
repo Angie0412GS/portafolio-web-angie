@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Angie Gonzalez</title>
+    <link rel="icon" href="aprendices/LOGO1.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/contactos.css">
+    <script src="https://kit.fontawesome.com/tu_kit_fontawesome.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+            <nav class="navbar">
+                <div class="logo">Angie Gonzalez</div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="portafolio.html">Portafolio</a></li>
+                    <li><a href="actividades.html">Actividades</a></li>
+                    <li><a href="juegos.html">Juegos</a></li>
+                    <li><a href="aprendices.html">Aprendices</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">☰</button>
+            </nav>
+        </header>
+
+    <main class="contenido-principal">
+        <section class="seccion seccion-contacto">
+            <h2 class="titulo-seccion">Ponte en Contacto</h2>
+            <p class="texto-sobre" style="text-align: center; max-width: 700px; margin: 0 auto 30px;">¡Me encantaría saber de ti! Rellena el formulario o usa mis redes sociales.</p>
+
+            <div class="contenedor-formulario-contacto">
+                <form action="#" class="form">
+                    <div class="form-encabezado">
+                        <h1 class="form-titulo">Envía tu Mensaje</h1>
+                    </div>
+
+                    <label for="nombres" class="form-label">Nombres:</label>
+                    <input type="text" id="nombres" class="form-input" placeholder="Escribe tu nombre completo" required>
+
+                    <label for="correo" class="form-label">Correo electrónico:</label>
+                    <input type="email" id="correo" class="form-input" placeholder="Escribe tu correo electrónico" required>
+
+                    <label for="asunto" class="form-label">Asunto:</label>
+                    <input type="text" id="asunto" class="form-input" placeholder="¿Sobre qué quieres hablar?" required>
+
+                    <label for="mensaje" class="form-label">Mensaje:</label>
+                    <textarea id="mensaje" class="form-textarea" placeholder="Escribe aquí tu mensaje" required></textarea>
+
+                    <input type="submit" class="btn" value="Enviar Mensaje">
+                </form>
+
+                <div class="info-adicional-contacto">
+                    <div class="perfil-contacto-img-contenedor">
+                        <img src="aprendices/perfil2.png" alt="Foto de perfil de Angie Gonzalez" class="perfil-contacto-img">
+                    </div>
+                    <h3>¿Prefieres otro medio?</h3>
+                    <p>Puedes encontrarme en:</p>
+                    <ul class="redes-contacto">
+                        <li><a href="https://wa.me/573137735912"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                        <li><a href="mailto:angiekatherinegonzalezsedano@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
+                        <li><a href="https://www.linkedin.com/in/angie-katherine-gonzalez-sedano-958649348/" ><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    </ul>
+                    <p class="ubicacion">
+                        <i class="fas fa-map-marker-alt"></i> Floridablanca, Santander, Colombia
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Angie Gonzalez. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/tu_kit_fontawesome.js" crossorigin="anonymous"></script>
+</body>
+</html>

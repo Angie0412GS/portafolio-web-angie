@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f8f8;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#container {
+    max-width: 1200px;
+    margin: 30px auto;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.barra-superior {
+    background-color: #BF1363;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.fcard {
+    width: 290px;
+    height: 420px;
+    perspective: 1200px;
+    transition: transform 0.4s ease-out, box-shadow 0.4s ease-out;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.fcard:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.25);
+}
+
+.inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.fcard:hover .inner {
+    transform: rotateY(180deg);
+}
+
+.pfrente,
+.ptrasera {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.pfrente {
+    background-color: #fff;
+}
+
+.pfrente img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.fcard:hover .pfrente img {
+    transform: scale(1.02);
+}
+
+.ptrasera {
+    background-color: #BF1363;
+    color: #fff;
+    transform: rotateY(180deg);
+    border: 1px solid #BF1363;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.ptrasera h3 {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.ptrasera p {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #f0f0f0;
+}
+
+.ptrasera p:last-child {
+    font-size: 0.95rem;
+    color: #ddd;
+    font-style: italic;
+}
+
+.fcard:hover .ptrasera {
+    background-color: #040300;
+    border-color: #040300;
+}
+
+.fcard:hover .ptrasera h3,
+.fcard:hover .ptrasera p {
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .barra-superior {
+        font-size: 1.8rem;
+        padding: 15px 0;
+        margin-bottom: 30px;
+    }
+
+    .cards {
+        padding: 10px;
+        gap: 20px;
+    }
+
+    .fcard {
+        width: 90%;
+        max-width: 320px;
+        height: 380px;
+        margin: 10px auto;
+    }
+
+    .ptrasera h3 {
+        font-size: 1.5rem;
+    }
+
+    .ptrasera p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .barra-superior {
+        font-size: 1.5rem;
+    }
+
+    .fcard {
+        height: 350px;
+    }
+}

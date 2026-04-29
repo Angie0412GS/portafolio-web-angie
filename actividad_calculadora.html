@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora - Angie Gonzalez</title>
+    <link rel="icon" href="aprendices/LOGO1.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="/css/estilos.css"> <link rel="stylesheet" href="css/suma.css"> </head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Angie Gonzalez</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="portafolio.html">Portafolio</a></li>
+                <li><a href="actividades.html">Actividades</a></li>
+                <li><a href="juegos.html">Juegos</a></li>
+                <li><a href="aprendices.html">Aprendices</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">☰</button>
+        </nav>
+    </header>
+
+    <main class="contenido-principal">
+        <section class="seccion">
+            <h1 class="titulo-seccion">Calculadora Básica</h1>
+            <p class="texto-sobre" style="text-align: center; margin-bottom: 30px;">Una calculadora funcional que realiza las operaciones aritméticas básicas (suma, resta, multiplicación y división).</p>
+            
+            <div class="contenedor-app"> <h2>Calculadora</h2>
+                <input type="number" id="num1" placeholder="Número 1">
+                <input type="number" id="num2" placeholder="Número 2">
+                <select id="operacion">
+                    <option value="suma">+</option>
+                    <option value="resta">-</option>
+                    <option value="multiplicacion">x</option>
+                    <option value="division">÷</option>
+                </select>
+                <button onclick="calcular()">Calcular</button>
+                <input type="text" id="resultado" placeholder="Resultado" readonly>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="actividades.html" class="btn-interactivo">Volver a Actividades</a>
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Angie Gonzalez. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/suma.js"></script> <script src="https://kit.fontawesome.com/tu_kit_fontawesome.js" crossorigin="anonymous"></script>
+</body>
+</html>

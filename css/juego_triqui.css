@@ -1,0 +1,128 @@
+.triqui-contenedor {
+    max-width: 450px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.triqui-contenedor .mensaje-juego {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #343A40;
+}
+
+.triqui-contenedor .mensaje-juego #turnoActual {
+    color: #cb4985;
+}
+
+.tablero-triqui {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    background-color: #212529;
+    width: 315px;
+    height: 315px;
+    margin: 0 auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.celda {
+    width: 100px;
+    height: 100px;
+    background-color: #F8F9FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    user-select: none;
+}
+
+.celda:hover:not(.marcada) {
+    background-color: #E9ECEF;
+}
+
+.celda.marcada {
+    cursor: default;
+}
+
+.celda.X {
+    color: #007BFF;
+}
+
+.celda.O {
+    color: #DC3545;
+}
+
+.triqui-contenedor .resultado-juego {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.triqui-contenedor .resultado-juego.ganador {
+    color: #28A745;
+}
+
+.triqui-contenedor .resultado-juego.empate {
+    color: #FFC107;
+}
+
+.triqui-contenedor .btn-juego {
+    background: #cb4985;
+    border: none;
+    padding: 12px 28px;
+    color: #FFFFFF;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px #800c42;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.triqui-contenedor .btn-juego:hover {
+    background: #cb4985;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px #800c42;
+}
+
+.triqui-contenedor .oculto {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .triqui-contenedor {
+        margin: 20px auto;
+        padding: 20px;
+        width: 90%;
+    }
+    .tablero-triqui {
+        grid-template-columns: repeat(3, 80px);
+        grid-template-rows: repeat(3, 80px);
+        width: 255px;
+        height: 255px;
+    }
+    .celda {
+        width: 80px;
+        height: 80px;
+        font-size: 3rem;
+    }
+    .triqui-contenedor .mensaje-juego {
+        font-size: 1.1rem;
+    }
+    .triqui-contenedor .resultado-juego {
+        font-size: 1.5rem;
+    }
+}

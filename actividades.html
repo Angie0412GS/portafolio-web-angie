@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividades - Angie Gonzalez</title>
+    <link rel="icon" href="aprendices/LOGO1.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+        <div class="logo">Angie Gonzalez</div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="portafolio.html">Portafolio</a></li>
+            <li><a href="actividades.html">Actividades</a></li>
+            <li><a href="juegos.html">Juegos</a></li>
+            <li><a href="aprendices.html">Aprendices</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">☰</button>
+        </nav>
+    </header>
+
+
+    <main class="contenido-principal">
+        <section class="seccion actividades-intro">
+            <h2 class="titulo-seccion">Mis Actividades del Curso</h2>
+            <p class="texto-sobre">Aquí puedes encontrar una muestra de las actividades y proyectos interactivos que he desarrollado durante mi formación. Haz clic en cada tarjeta para ver la aplicación en funcionamiento.</p>
+        </section>
+
+        <section class="seccion contenedor-actividades">
+            <div class="tarjeta-actividad animate-fadein delay-1">
+                <div class="imagen-actividad">
+                    <img src="aprendices/LISTA.jpeg" alt="Captura de pantalla de la Lista de Tareas">
+                </div>
+                <div class="info-actividad">
+                    <h3>Lista de Tareas Interactiva</h3>
+                    <p>Una aplicación web sencilla para gestionar tareas diarias. Permite agregar, marcar como completadas y eliminar tareas.</p>
+                    <div class="enlaces-actividad">
+                        <a href="actividad_lista_tareas.html" class="btn-interactivo">Ver Actividad</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta-actividad animate-fadein delay-2">
+                <div class="imagen-actividad">
+                    <img src="aprendices/SUMA.jpeg" alt="Captura de pantalla de la Calculadora">
+                </div>
+                <div class="info-actividad">
+                    <h3>Calculadora Básica</h3>
+                    <p>Una calculadora funcional que realiza operaciones básicas (suma, resta, multiplicación, división). Implementada con HTML, CSS y JavaScript.</p>
+                    <div class="enlaces-actividad">
+                        <a href="actividad_calculadora.html"  class="btn-interactivo">Ver Actividad</a>
+                    </div>
+                </div>
+            </div>
+
+            </section>
+
+        <section class="seccion cta-contacto">
+            <h2 class="titulo-seccion">¿Interesada en mis proyectos?</h2>
+            <p class="texto-sobre">Si tienes alguna pregunta sobre mis habilidades o te gustaría colaborar en un proyecto, no dudes en contactarme.</p>
+            <a href="https://wa.me/573137735912" class="btn-interactivo">¡Hablemos!</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Angie Gonzalez. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/listadetareas.js"></script>
+    <script src="js/suma.js"></script>
+    <script src="https://kit.fontawesome.com/tu_kit_fontawesome.js" crossorigin="anonymous"></script>
+</body>
+</html>

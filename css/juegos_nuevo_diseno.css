@@ -1,0 +1,150 @@
+.juegos-intro {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 0;
+}
+
+.contenedor-juegos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 35px;
+    justify-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.juego-card {
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    width: 100%;
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+}
+
+.juego-card:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.2);
+}
+
+.juego-imagen {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.juego-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.juego-card:hover .juego-imagen img {
+    transform: scale(1.1);
+}
+
+.juego-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f587ba;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.juego-card:hover .juego-overlay {
+    opacity: 1;
+}
+
+.btn-jugar-overlay {
+    background-color: #FFFFFF;
+    color: #BF1363;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    border: 2px solid #BF1363;
+}
+
+.btn-jugar-overlay:hover {
+    background-color: #BF1363;
+    color: #FFFFFF;
+    transform: scale(1.05);
+    border-color: #FFFFFF;
+}
+
+.juego-info {
+    padding: 25px;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.juego-info h3 {
+    font-size: 1.8rem;
+    color: #343A40;
+    margin-bottom: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.juego-info p {
+    font-size: 1rem;
+    color: #6C757D;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+    .contenedor-juegos-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        padding: 15px;
+    }
+    .juego-card {
+        max-width: none;
+    }
+    .juego-info h3 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contenedor-juegos-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 10px;
+    }
+    .juego-card {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .juego-imagen {
+        height: 180px;
+    }
+    .juego-info h3 {
+        font-size: 1.5rem;
+    }
+    .juego-info p {
+        font-size: 0.95rem;
+    }
+    .btn-jugar-overlay {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}

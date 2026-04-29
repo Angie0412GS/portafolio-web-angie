@@ -1,0 +1,109 @@
+.piano-contenedor {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.teclado-piano {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    background-color: #343A40;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.3);
+}
+
+.tecla {
+    width: 80px;
+    height: 200px;
+    background-color: #FFFFFF;
+    border: 1px solid #CED4DA;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: background-color 0.1s ease, transform 0.05s ease, box-shadow 0.1s ease;
+    user-select: none;
+}
+
+.tecla:hover {
+    background-color: #F8F9FA;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.tecla.activa {
+    background-color: #f24596;
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2), inset 0 0 5px #BF1363;
+    color: #FFFFFF;
+}
+
+.tecla span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #495057;
+}
+
+.tecla.activa span {
+    color: #FFFFFF;
+}
+
+.tecla small {
+    font-size: 0.8rem;
+    color: #ADB5BD;
+}
+
+.tecla.activa small {
+    color: #F8F9FA;
+}
+
+@media (max-width: 768px) {
+    .teclado-piano {
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 10px;
+    }
+    .tecla {
+        width: 70px;
+        height: 150px;
+        padding-bottom: 10px;
+    }
+    .tecla span {
+        font-size: 1rem;
+    }
+    .tecla small {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .teclado-piano {
+        gap: 5px;
+        padding: 8px;
+    }
+    .tecla {
+        width: 55px;
+        height: 120px;
+        padding-bottom: 8px;
+    }
+    .tecla span {
+        font-size: 0.9rem;
+    }
+    .tecla small {
+        font-size: 0.6rem;
+    }
+}

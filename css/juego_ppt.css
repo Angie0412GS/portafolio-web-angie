@@ -1,0 +1,136 @@
+/* Estilos para Piedra, Papel o Tijera */
+.contenedor-juego-individual {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contenedor-juego-individual .marcador {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #343A40;
+    gap: 20px;
+}
+
+.contenedor-juego-individual .marcador span {
+    color: #FF00FF;
+    font-size: 1.5rem;
+}
+
+.contenedor-juego-individual .opciones-juego {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Para que los botones se envuelvan */
+}
+
+.contenedor-juego-individual .btn-opcion {
+    background: #BF1363;
+    border: none;
+    padding: 15px 30px;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(255, 0, 255, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    min-width: 120px;
+}
+
+.contenedor-juego-individual .btn-opcion:hover {
+    background: #cb4985;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px #800c42;
+}
+
+.contenedor-juego-individual .btn-opcion i {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.contenedor-juego-individual .eleccion {
+    font-size: 1.1rem;
+    color: #6C757D;
+    margin-top: 10px;
+}
+
+.contenedor-juego-individual .resultado {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.contenedor-juego-individual .resultado.ganado {
+    color: #28A745; /* Verde */
+}
+
+.contenedor-juego-individual .resultado.perdido {
+    color: #DC3545; /* Rojo */
+}
+
+.contenedor-juego-individual .resultado.empate {
+    color: #FFC107; /* Amarillo/Naranja */
+}
+
+.contenedor-juego-individual .btn-juego { /* Reutiliza el estilo del botón general */
+    background: #cb4985;
+    border: none;
+    padding: 12px 28px;
+    color: #FFFFFF;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px #800c42;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    margin-top: 10px; /* Separación del resultado */
+}
+
+.contenedor-juego-individual .btn-juego:hover {
+    background: #cb4985;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px #800c42;
+}
+
+.contenedor-juego-individual .oculto {
+    display: none;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .contenedor-juego-individual {
+        margin: 20px auto;
+        padding: 20px;
+        width: 90%;
+    }
+    .contenedor-juego-individual .marcador {
+        font-size: 1.1rem;
+    }
+    .contenedor-juego-individual .marcador span {
+        font-size: 1.3rem;
+    }
+    .contenedor-juego-individual .btn-opcion {
+        padding: 12px 25px;
+        font-size: 1rem;
+        min-width: 100px;
+    }
+    .contenedor-juego-individual .btn-opcion i {
+        font-size: 2rem;
+    }
+    .contenedor-juego-individual .resultado {
+        font-size: 1.5rem;
+    }
+}

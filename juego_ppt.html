@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tijera - Angie Gonzalez</title>
+    <link rel="icon" href="aprendices/LOGO1.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/juego_ppt.css"> </head>
+<body>
+
+   <header>
+            <nav class="navbar">
+                <div class="logo">Angie Gonzalez</div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="portafolio.html">Portafolio</a></li>
+                    <li><a href="actividades.html">Actividades</a></li>
+                    <li><a href="juegos.html">Juegos</a></li>
+                    <li><a href="aprendices.html">Aprendices</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">☰</button>
+            </nav>
+    </header>
+
+
+    <main class="contenido-principal">
+        <section class="seccion">
+            <h1 class="titulo-seccion">Piedra, Papel o Tijera</h1>
+            <p class="texto-sobre" style="text-align: center; max-width: 700px; margin: 0 auto 30px;">¡Juega el clásico Piedra, Papel o Tijera contra la computadora!</p>
+            
+            <div class="contenedor-juego-individual">
+                <div class="marcador">
+                    <p>Jugador: <span id="puntuacionJugador">0</span></p>
+                    <p>Computadora: <span id="puntuacionComputadora">0</span></p>
+                </div>
+                <div class="opciones-juego">
+                    <button class="btn-opcion" data-opcion="piedra">
+                        <i class="fas fa-hand-rock"></i> Piedra
+                    </button>
+                    <button class="btn-opcion" data-opcion="papel">
+                        <i class="fas fa-hand-paper"></i> Papel
+                    </button>
+                    <button class="btn-opcion" data-opcion="tijera">
+                        <i class="fas fa-hand-scissors"></i> Tijera
+                    </button>
+                </div>
+                <p class="eleccion" id="mensajeEleccion"></p>
+                <p class="resultado" id="resultadoJuego"></p>
+                <button id="reiniciarJuegoBtn" class="btn-juego oculto">Reiniciar Juego</button>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="juegos.html" class="btn-interactivo">Volver a Juegos</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Angie Gonzalez. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/juego_ppt.js"></script> <script src="https://kit.fontawesome.com/tu_kit_fontawesome.js" crossorigin="anonymous"></script>
+</body>
+</html>

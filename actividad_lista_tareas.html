@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas - Angie Gonzalez</title>
+    <link rel="icon" href="aprendices/LOGO1.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/estilos.css"> <link rel="stylesheet" href="css/listadetareas.css"> </head>
+<body>
+
+        <header>
+            <nav class="navbar">
+                <div class="logo">Angie Gonzalez</div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="portafolio.html">Portafolio</a></li>
+                    <li><a href="actividades.html">Actividades</a></li>
+                    <li><a href="juegos.html">Juegos</a></li>
+                    <li><a href="aprendices.html">Aprendices</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">☰</button>
+            </nav>
+        </header>
+
+
+    <main class="contenido-principal">
+        <section class="seccion">
+            <h1 class="titulo-seccion">Lista de Tareas</h1>
+            <p class="texto-sobre" style="text-align: center; margin-bottom: 30px;">Una aplicación sencilla para gestionar tareas diarias. Agrega, marca como completadas y elimina tus pendientes.</p>
+            
+            <div class="contenedor-app"> <div class="contenedor">
+                    <h1>Lista de tareas</h1>
+                    <div class="entrada-tarea">
+                        <input type="text" id="nuevaTarea" placeholder="Ingrese una nueva tarea">
+                        <button class="agregar" onclick="agregarTarea()">Agregar Tarea</button>
+                    </div>
+                    <ul id="listaTareas"></ul>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="actividades.html" class="btn-interactivo">Volver a Actividades</a>
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Angie Gonzalez. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/listadetareas.js"></script> <script src="https://kit.fontawesome.com/tu_kit_fontawesome.js" crossorigin="anonymous"></script>
+</body>
+</html>

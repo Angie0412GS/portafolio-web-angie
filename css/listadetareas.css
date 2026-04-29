@@ -1,0 +1,113 @@
+.contenido-principal {
+    background: #FFF0FA;
+    padding: 40px 20px;
+    min-height: 80vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #54082b;
+}
+
+.seccion {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #FDE6FD;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.1);
+    padding: 30px 25px;
+}
+
+.titulo-seccion {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #e81577;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 4px #e0b3e0;
+}
+
+.texto-sobre {
+    font-size: 1.1rem;
+    color: #800c42;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.contenedor-app .contenedor {
+    background-color: #F9D6F9;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 5px 12px rgba(255, 0, 255, 0.1);
+}
+
+.contenedor h1 {
+    color: #800c42;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.entrada-tarea {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+#nuevaTarea {
+    flex-grow: 1;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    background-color: #fff;
+    box-shadow: inset 0 0 4px #ffb3ff;
+}
+
+.agregar {
+    background: #e1227b;
+    border: none;
+    padding: 12px 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 8px #f599c4;
+}
+
+.agregar:hover {
+    background-color: #ee157b;
+}
+
+#listaTareas {
+    list-style: none;
+    padding: 0;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#listaTareas li {
+    background: #fbe2fb;
+    margin-bottom: 10px;
+    padding: 12px 15px;
+    border-radius: 6px;
+    color: #4B004B;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: inset 0 0 4px #f0b3f0;
+}
+
+#listaTareas li button {
+    background: #FF99FF;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#listaTareas li button:hover {
+    background: #de1573;
+    box-shadow: 0 0 6px #f371ad;
+}
